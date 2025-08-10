@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Headphones — Our results (CSS pentagons)</title>
+
+  <!-- Icon font CSS if you use it -->
+  <link rel="stylesheet" href="assets/icons/holberton-icons.css">
+
+  <link rel="stylesheet" href="6-styles.css">
+</head>
+<body>
+  <!-- header (simple) -->
+  <header class="site-header">
+    <div class="container header-container">
+      <a class="logo" href="#">Headphone<span class="logo-dot">.</span></a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="#">Products</a>
+        <a href="#">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- hero (minimal) -->
+  <section class="hero">
+    <div class="container hero-inner">
+      <div class="hero-content">
+        <h1>Experience sound, reimagined</h1>
+        <p>Premium wireless headphones engineered for comfort and clarity.</p>
+        <a class="btn" href="#">Shop Now</a>
+      </div>
+
+      <div class="hero-image">
+        <picture>
+          <source media="(max-width:480px)" srcset="assets/images/hero-mobile.jpg">
+          <img src="assets/images/hero-desktop.jpg" alt="Pair of headphones">
+        </picture>
+      </div>
+    </div>
+  </section>
+
+  <!-- what we do (kept minimal / reusable) -->
+  <section id="what-we-do" class="what-we-do">
+    <div class="container">
+      <h2 class="section-title">What we do</h2>
+      <p class="section-sub">We craft effortless listening experiences — engineered design, high fidelity, and lasting comfort.</p>
+
+      <div class="features">
+        <article class="feature">
+          <span class="feature-icon icon-1" aria-hidden="true"></span>
+          <h3 class="feature-title">Engineering</h3>
+          <p class="feature-desc">Balanced sound across genres.</p>
+        </article>
+
+        <article class="feature">
+          <span class="feature-icon icon-2" aria-hidden="true"></span>
+          <h3 class="feature-title">Comfort</h3>
+          <p class="feature-desc">Ergonomic design for long wear.</p>
+        </article>
+
+        <article class="feature">
+          <span class="feature-icon icon-3" aria-hidden="true"></span>
+          <h3 class="feature-title">Battery</h3>
+          <p class="feature-desc">All-day battery life.</p>
+        </article>
+
+        <article class="feature">
+          <span class="feature-icon icon-4" aria-hidden="true"></span>
+          <h3 class="feature-title">Connectivity</h3>
+          <p class="feature-desc">Seamless multi-device pairing.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Our results (now with CSS pentagons) ===== -->
+  <section id="our-results" class="our-results">
+    <div class="container">
+      <h2 class="section-title">Our results</h2>
+      <p class="section-sub">Numbers that show our impact</p>
+
+      <div class="results-grid">
+        <!-- Each result uses a CSS pentagon (no images) -->
+        <div class="result">
+          <div class="pentagon" role="img" aria-label="250 thousand plus happy users">
+            <span class="pentagon-number">250K+</span>
+          </div>
+          <div class="result-label">Happy users</div>
+        </div>
+
+        <div class="result">
+          <div class="pentagon" role="img" aria-label="Average rating 4.9 stars">
+            <span class="pentagon-number">4.9★</span>
+          </div>
+          <div class="result-label">Avg. rating</div>
+        </div>
+
+        <div class="result">
+          <div class="pentagon" role="img" aria-label="Two million hours streamed">
+            <span class="pentagon-number">2M</span>
+          </div>
+          <div class="result-label">Hours streamed</div>
+        </div>
+
+        <div class="result">
+          <div class="pentagon" role="img" aria-label="Presence in 120 plus countries">
+            <span class="pentagon-number">120+</span>
+          </div>
+          <div class="result-label">Countries reached</div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ===== end our results ===== -->
+
+</body>
+</html>
