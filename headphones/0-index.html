@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Headphones — Hero</title>
+  <link rel="stylesheet" href="0-styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-container">
+      <a class="logo" href="#">Headphone<span class="logo-dot">.</span></a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="#">Products</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-content">
+          <h1>Experience sound, reimagined</h1>
+          <p>Premium wireless headphones engineered for comfort and clarity. Rich bass, crystal highs, and all-day battery life.</p>
+          <a class="btn" href="#">Shop Now</a>
+        </div>
+
+        <div class="hero-image" role="img" aria-label="Headphones hero image">
+          <picture>
+            <!-- mobile image for <= 480px -->
+            <source media="(max-width:480px)" srcset="assets/images/hero-mobile.jpg">
+            <!-- desktop/fallback -->
+            <img src="assets/images/hero-desktop.jpg" alt="Pair of headphones" />
+          </picture>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
