@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Headphones — Responsive nav with hamburger</title>
+
+  <link rel="stylesheet" href="8-styles.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-container">
+      <a class="logo" href="#">Headphone<span class="logo-dot">.</span></a>
+
+      <!-- Hamburger button (visible only on small screens) -->
+      <button id="hamburger-btn" class="hamburger" aria-label="Toggle navigation" aria-expanded="false" aria-controls="site-nav">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+
+      <!-- Main navigation -->
+      <nav id="site-nav" class="site-nav" aria-hidden="true">
+        <a href="#">Products</a>
+        <a href="#">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero (unchanged) -->
+  <section class="hero">
+    <div class="container hero-inner">
+      <div class="hero-content">
+        <h1>Experience sound, reimagined</h1>
+        <p>Premium wireless headphones engineered for comfort and clarity.</p>
+        <a class="btn" href="#">Shop Now</a>
+      </div>
+
+      <div class="hero-image">
+        <picture>
+          <source media="(max-width:480px)" srcset="assets/images/hero-mobile.jpg">
+          <img src="assets/images/hero-desktop.jpg" alt="Pair of headphones">
+        </picture>
+      </div>
+    </div>
+  </section>
+
+  <!-- What we do (abbreviated) -->
+  <section id="what-we-do" class="what-we-do">
+    <div class="container">
+      <h2 class="section-title">What we do</h2>
+      <div class="features animated-row">
+        <article class="feature"><h3>Engineering</h3></article>
+        <article class="feature"><h3>Comfort</h3></article>
+        <article class="feature"><h3>Battery</h3></article>
+        <article class="feature"><h3>Connectivity</h3></article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our results (abbreviated) -->
+  <section id="our-results" class="our-results">
+    <div class="container">
+      <h2 class="section-title">Our results</h2>
+      <div class="results-grid animated-row">
+        <div class="result"><div class="pentagon"><span class="pentagon-number">250K+</span></div><div class="result-label">Happy users</div></div>
+        <div class="result"><div class="pentagon"><span class="pentagon-number">4.9★</span></div><div class="result-label">Avg rating</div></div>
+        <div class="result"><div class="pentagon"><span class="pentagon-number">2M</span></div><div class="result-label">Hours streamed</div></div>
+        <div class="result"><div class="pentagon"><span class="pentagon-number">120+</span></div><div class="result-label">Countries reached</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- small footer CTA -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>Nice! Your responsive nav is working. <a class="tweet-link" target="_blank" rel="noopener noreferrer" href="https://twitter.com/intent/tweet?text=I%20built%20a%20responsive%20nav%20with%20a%20hamburger%20menu!">Tweet it</a></p>
+    </div>
+  </footer>
+
+  <script src="8-script.js"></script>
+</body>
+</html>
+
