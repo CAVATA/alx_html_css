@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Headphones — What we do</title>
+
+  <!-- Icon font CSS (from holberton zip). See steps below to extract it to assets/icons/ -->
+  <link rel="stylesheet" href="assets/icons/holberton-icons.css">
+
+  <!-- main styles for this page -->
+  <link rel="stylesheet" href="1-styles.css">
+</head>
+<body>
+  <!-- header and hero can be copied from previous task (or included here) -->
+  <header class="site-header">
+    <div class="container header-container">
+      <a class="logo" href="#">Headphone<span class="logo-dot">.</span></a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="#">Products</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-content">
+          <h1>Experience sound, reimagined</h1>
+          <p>Premium wireless headphones engineered for comfort and clarity.</p>
+          <a class="btn" href="#">Shop Now</a>
+        </div>
+
+        <div class="hero-image" role="img" aria-label="Headphones hero image">
+          <picture>
+            <source media="(max-width:480px)" srcset="assets/images/hero-mobile.jpg">
+            <img src="assets/images/hero-desktop.jpg" alt="Pair of headphones" />
+          </picture>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= What we do section ======= -->
+    <section id="what-we-do" class="what-we-do">
+      <div class="container">
+        <h2 class="section-title">What we do</h2>
+        <p class="section-sub">We craft effortless listening experiences — engineered design, high fidelity, and lasting comfort.</p>
+
+        <div class="features">
+          <!-- Feature 1 -->
+          <article class="feature">
+            <!-- Insert the icon font class/name from the demo inside this span if the demo shows a specific class.
+                 Example the demo might give a class like: <span class="icon holberton-laptop"></span> 
+                 We keep this generic so you can plug the exact icon class from the provided demo. -->
+            <span class="feature-icon icon-1" aria-hidden="true"></span>
+            <h3 class="feature-title">Engineering</h3>
+            <p class="feature-desc">Acoustic engineering for rich, balanced sound signature across genres.</p>
+          </article>
+
+          <!-- Feature 2 -->
+          <article class="feature">
+            <span class="feature-icon icon-2" aria-hidden="true"></span>
+            <h3 class="feature-title">Comfort</h3>
+            <p class="feature-desc">Ergonomic design and plush materials for all-day use.</p>
+          </article>
+
+          <!-- Feature 3 -->
+          <article class="feature">
+            <span class="feature-icon icon-3" aria-hidden="true"></span>
+            <h3 class="feature-title">Battery</h3>
+            <p class="feature-desc">Long-lasting battery life with fast-charge support.</p>
+          </article>
+
+          <!-- Feature 4 -->
+          <article class="feature">
+            <span class="feature-icon icon-4" aria-hidden="true"></span>
+            <h3 class="feature-title">Connectivity</h3>
+            <p class="feature-desc">Stable wireless connection and multi-device pairing.</p>
+          </article>
+        </div> <!-- .features -->
+      </div> <!-- .container -->
+    </section>
+    <!-- ===== end what we do ===== -->
+  </main>
+</body>
+</html>
